@@ -6,7 +6,7 @@ use Livewire\Component;
 use App\Traits\Paginate;
 use App\Traits\RecuperarBanderas;
 
-class PaisesIndex extends Component
+class PaisIndex extends Component
 {   
     use Paginate, RecuperarBanderas;
 
@@ -49,6 +49,6 @@ class PaisesIndex extends Component
         }
         
         
-        return view('livewire.paises-index', compact('paises', 'pais', 'banderas'));
+        return view('livewire.pais-index', compact('paises', 'pais', 'banderas'));
     }
 }

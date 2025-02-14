@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
-class PaisesController extends Controller
+class PaisController extends Controller
 {
     public function index()
     {  
-        return view('paises.index');
+        return view('pais.index');
     }
 
     public function show(string $codISO)
@@ -22,6 +22,6 @@ class PaisesController extends Controller
         $params = ['sCountryISOCode' => $codISO];
         $pais = $client->FullCountryInfo($params)->FullCountryInfoResult;
 
-        return view('paises.show', compact('pais'));
+        return view('pais.show', compact('pais'));
     }
 }

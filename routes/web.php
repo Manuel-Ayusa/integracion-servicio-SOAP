@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\PaisesController;
+use App\Http\Controllers\PaisController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [PaisesController::class, 'index']);
+Route::get('/', [PaisController::class, 'index']);
 
-Route::get('paises', [PaisesController::class, 'index'])->name('paises.index');
-Route::get('paises/{codISO}', [PaisesController::class, 'show'])->name('paises.show');
+Route::get('paises', [PaisController::class, 'index'])->name('paises.index');
+Route::get('paises/{codISO}', [PaisController::class, 'show'])->name('paises.show');
